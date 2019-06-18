@@ -1,0 +1,30 @@
+[27-Dec-2017 23:02:03 UTC] PHP Notice:  Undefined variable: data in /home/piccmaqc/public_html/includes/http/apiquery.php on line 26
+[11-Feb-2018 16:39:24 UTC] PHP Parse error:  syntax error, unexpected 'time' (T_STRING), expecting ')' in /home/piccmaqc/public_html/lock/apiii/posts/index2.php on line 10
+[11-Feb-2018 16:39:56 UTC] PHP Parse error:  syntax error, unexpected 'time' (T_STRING), expecting ')' in /home/piccmaqc/public_html/lock/apiii/posts/index2.php on line 10
+[11-Feb-2018 16:40:14 UTC] PHP Parse error:  syntax error, unexpected 'getUserDp' (T_STRING), expecting ')' in /home/piccmaqc/public_html/lock/apiii/posts/index2.php on line 17
+[11-Feb-2018 16:41:19 UTC] PHP Notice:  Undefined variable: row in /home/piccmaqc/public_html/lock/apiii/posts/index2.php on line 8
+[11-Feb-2018 16:41:19 UTC] PHP Notice:  Undefined variable: row in /home/piccmaqc/public_html/lock/apiii/posts/index2.php on line 9
+[11-Feb-2018 16:41:19 UTC] PHP Notice:  Undefined variable: row in /home/piccmaqc/public_html/lock/apiii/posts/index2.php on line 10
+[11-Feb-2018 16:41:19 UTC] PHP Notice:  Undefined variable: row in /home/piccmaqc/public_html/lock/apiii/posts/index2.php on line 11
+[11-Feb-2018 16:41:19 UTC] PHP Notice:  Undefined variable: row in /home/piccmaqc/public_html/lock/apiii/posts/index2.php on line 12
+[11-Feb-2018 16:41:19 UTC] PHP Notice:  Undefined variable: row in /home/piccmaqc/public_html/lock/apiii/posts/index2.php on line 13
+[11-Feb-2018 16:41:19 UTC] PHP Notice:  Undefined variable: row in /home/piccmaqc/public_html/lock/apiii/posts/index2.php on line 14
+[11-Feb-2018 16:41:19 UTC] PHP Notice:  Undefined variable: row in /home/piccmaqc/public_html/lock/apiii/posts/index2.php on line 15
+[11-Feb-2018 16:41:19 UTC] PHP Notice:  Undefined variable: row in /home/piccmaqc/public_html/lock/apiii/posts/index2.php on line 17
+[11-Feb-2018 16:41:19 UTC] PHP Notice:  Undefined variable: row in /home/piccmaqc/public_html/lock/apiii/posts/index2.php on line 18
+[11-Feb-2018 16:41:56 UTC] PHP Parse error:  syntax error, unexpected 'getUserDp' (T_STRING), expecting ')' in /home/piccmaqc/public_html/lock/apiii/posts/index2.php on line 17
+[11-Feb-2018 16:42:13 UTC] PHP Parse error:  syntax error, unexpected 'getUserDp' (T_STRING), expecting ')' in /home/piccmaqc/public_html/lock/apiii/posts/index2.php on line 17
+[11-Feb-2018 16:55:53 UTC] PHP Parse error:  syntax error, unexpected 'time' (T_STRING), expecting ')' in /home/piccmaqc/public_html/lock/apiii/posts/index2.php on line 11
+[11-Feb-2018 17:07:36 UTC] PHP Notice:  Undefined variable: dk in /home/piccmaqc/public_html/lock/apiii/posts/index2.php on line 8
+[11-Feb-2018 17:07:36 UTC] PHP Notice:  Undefined variable: row in /home/piccmaqc/public_html/lock/apiii/posts/index2.php on line 9
+[11-Feb-2018 17:07:36 UTC] PHP Notice:  Undefined variable: row in /home/piccmaqc/public_html/lock/apiii/posts/index2.php on line 10
+[11-Feb-2018 17:07:36 UTC] PHP Notice:  Undefined variable: row in /home/piccmaqc/public_html/lock/apiii/posts/index2.php on line 11
+[11-Feb-2018 17:07:36 UTC] PHP Notice:  Undefined variable: row in /home/piccmaqc/public_html/lock/apiii/posts/index2.php on line 12
+[11-Feb-2018 17:07:36 UTC] PHP Notice:  Undefined variable: row in /home/piccmaqc/public_html/lock/apiii/posts/index2.php on line 13
+[11-Feb-2018 17:07:36 UTC] PHP Notice:  Undefined variable: row in /home/piccmaqc/public_html/lock/apiii/posts/index2.php on line 14
+[11-Feb-2018 17:07:36 UTC] PHP Notice:  Undefined variable: row in /home/piccmaqc/public_html/lock/apiii/posts/index2.php on line 15
+[11-Feb-2018 17:07:36 UTC] PHP Notice:  Undefined variable: row in /home/piccmaqc/public_html/lock/apiii/posts/index2.php on line 16
+[11-Feb-2018 17:07:36 UTC] PHP Notice:  Undefined variable: row in /home/piccmaqc/public_html/lock/apiii/posts/index2.php on line 17
+[11-Feb-2018 17:07:36 UTC] PHP Notice:  Undefined variable: row in /home/piccmaqc/public_html/lock/apiii/posts/index2.php on line 19
+[11-Feb-2018 17:07:36 UTC] PHP Notice:  Undefined variable: row in /home/piccmaqc/public_html/lock/apiii/posts/index2.php on line 20
+[11-Feb-2018 17:46:44 UTC] PHP Parse error:  syntax error, unexpected 'who' (T_STRING), expecting ')' in /home/piccmaqc/public_html/lock/apiii/posts/index2.php on line 79

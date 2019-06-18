@@ -1,0 +1,4 @@
+[24-Dec-2017 14:39:42 UTC] PHP Fatal error:  Unca[27-Dec-2017 14:41:47 UTC] PHP Notice:  Use of undefined constant logServerVar - assumed 'logServerVar' in /home/piccmaqc/public_html/includes/config/index.php on line 296
+[27-Dec-2017 14:41:55 UTC] PHP Notice:  Use of undefined constant logServerVar - assumed 'logServerVar' in /home/piccmaqc/public_html/includes/config/index.php on line 296
+[30-Dec-2017 07:37:11 UTC] PHP Warning:  mysqli::query(): (21000/1242): Subquery returns more than 1 row in /home/piccmaqc/public_html/includes/incl2.php on line 32
+[30-Dec-2017 07:38:00 UTC] PHP Warning:  mysqli::query(): (21000/1242): Subquery returns more than 1 row in /home/piccmaqc/public_html/includes/incl2.php on line 32

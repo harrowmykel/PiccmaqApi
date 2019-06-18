@@ -1,0 +1,14 @@
+[09-Aug-2018 13:24:43 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function validateSignUpUservalidateSignUpUser() in /home/piccmaqc/public_html/api/lock/apiii/profile/index.php:183
+Stack trace:
+#0 /home/piccmaqc/public_html/api/lock/apiii/profile/index.php(37): createUser()
+#1 {main}
+  thrown in /home/piccmaqc/public_html/api/lock/apiii/profile/index.php on line 183
+[09-Aug-2018 13:29:50 UTC] PHP Notice:  Undefined variable: rth in /home/piccmaqc/public_html/api/includes/validate_incl.php on line 35
+[09-Aug-2018 13:29:50 UTC] PHP Notice:  Undefined variable: now in /home/piccmaqc/public_html/api/includes/validate_incl.php on line 35
+[09-Aug-2018 13:29:50 UTC] PHP Notice:  Undefined variable: admin_accts_dnfnfnnfnfjn in /home/piccmaqc/public_html/api/includes/validate_incl.php on line 40
+[09-Aug-2018 13:29:50 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/piccmaqc/public_html/api/includes/validate_incl.php on line 40
+[16-Sep-2018 08:09:25 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function validateSignUpUser() in /home/piccmaqc/public_html/api/lock/apiii/profile/index.php:186
+Stack trace:
+#0 /home/piccmaqc/public_html/api/lock/apiii/profile/index.php(37): createUser()
+#1 {main}
+  thrown in /home/piccmaqc/public_html/api/lock/apiii/profile/index.php on line 186

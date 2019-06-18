@@ -1,0 +1,106 @@
+[02-Aug-2018 01:15:59 Europe/Berlin] PHP Fatal error:  Uncaught Exception: Unable to parse response as JSON in phar://C:/xamppp/htdocs/afreechat/includes/http/httpful.phar/Httpful/Handlers/JsonHandler.php:30
+Stack trace:
+#0 phar://C:/xamppp/htdocs/afreechat/includes/http/httpful.phar/Httpful/Response.php(107): Httpful\Handlers\JsonHandler->parse(' <br />\n<b>Noti...')
+#1 phar://C:/xamppp/htdocs/afreechat/includes/http/httpful.phar/Httpful/Response.php(46): Httpful\Response->_parse(' <br />\n<b>Noti...')
+#2 phar://C:/xamppp/htdocs/afreechat/includes/http/httpful.phar/Httpful/Request.php(230): Httpful\Response->__construct(' <br />\n<b>Noti...', 'HTTP/1.1 200 OK...', Object(Httpful\Request), Array)
+#3 phar://C:/xamppp/htdocs/afreechat/includes/http/httpful.phar/Httpful/Request.php(234): Httpful\Request->send()
+#4 C:\xamppp\htdocs\afreechat\includes\http\maq.php(29): Httpful\Request->sendIt()
+#5 C:\xamppp\htdocs\afreechat\includes\scramble_incl.php(94): Maq->post(Array)
+#6 C:\xamppp\htdocs\afreechat\scramble\index.php(10): getScrambleMessages()
+#7 {main}
+  thrown in phar://C:/xamppp/htdocs/afreechat/includes/http/httpful.phar/Httpful/Handlers/JsonHandler.php on line 30
+[02-Aug-2018 01:23:29 Europe/Berlin] PHP Fatal error:  Uncaught Exception: Unable to parse response as JSON in phar://C:/xamppp/htdocs/afreechat/includes/http/httpful.phar/Httpful/Handlers/JsonHandler.php:30
+Stack trace:
+#0 phar://C:/xamppp/htdocs/afreechat/includes/http/httpful.phar/Httpful/Response.php(107): Httpful\Handlers\JsonHandler->parse(' <br />\n<b>Noti...')
+#1 phar://C:/xamppp/htdocs/afreechat/includes/http/httpful.phar/Httpful/Response.php(46): Httpful\Response->_parse(' <br />\n<b>Noti...')
+#2 phar://C:/xamppp/htdocs/afreechat/includes/http/httpful.phar/Httpful/Request.php(230): Httpful\Response->__construct(' <br />\n<b>Noti...', 'HTTP/1.1 200 OK...', Object(Httpful\Request), Array)
+#3 phar://C:/xamppp/htdocs/afreechat/includes/http/httpful.phar/Httpful/Request.php(234): Httpful\Request->send()
+#4 C:\xamppp\htdocs\afreechat\includes\http\maq.php(29): Httpful\Request->sendIt()
+#5 C:\xamppp\htdocs\afreechat\includes\scramble_incl.php(96): Maq->post(Array)
+#6 C:\xamppp\htdocs\afreechat\scramble\index.php(10): getScrambleMessages()
+#7 {main}
+  thrown in phar://C:/xamppp/htdocs/afreechat/includes/http/httpful.phar/Httpful/Handlers/JsonHandler.php on line 30
+[02-Aug-2018 01:24:47 Europe/Berlin] PHP Fatal error:  Uncaught Exception: Unable to parse response as JSON in phar://C:/xamppp/htdocs/afreechat/includes/http/httpful.phar/Httpful/Handlers/JsonHandler.php:30
+Stack trace:
+#0 phar://C:/xamppp/htdocs/afreechat/includes/http/httpful.phar/Httpful/Response.php(107): Httpful\Handlers\JsonHandler->parse(' <br />\n<b>Noti...')
+#1 phar://C:/xamppp/htdocs/afreechat/includes/http/httpful.phar/Httpful/Response.php(46): Httpful\Response->_parse(' <br />\n<b>Noti...')
+#2 phar://C:/xamppp/htdocs/afreechat/includes/http/httpful.phar/Httpful/Request.php(230): Httpful\Response->__construct(' <br />\n<b>Noti...', 'HTTP/1.1 200 OK...', Object(Httpful\Request), Array)
+#3 phar://C:/xamppp/htdocs/afreechat/includes/http/httpful.phar/Httpful/Request.php(234): Httpful\Request->send()
+#4 C:\xamppp\htdocs\afreechat\includes\http\maq.php(29): Httpful\Request->sendIt()
+#5 C:\xamppp\htdocs\afreechat\includes\scramble_incl.php(96): Maq->post(Array)
+#6 C:\xamppp\htdocs\afreechat\scramble\index.php(10): getScrambleMessages()
+#7 {main}
+  thrown in phar://C:/xamppp/htdocs/afreechat/includes/http/httpful.phar/Httpful/Handlers/JsonHandler.php on line 30
+[02-Aug-2018 02:07:40 Europe/Berlin] PHP Fatal error:  Uncaught Exception: Unable to parse response as JSON in phar://C:/xamppp/htdocs/afreechat/includes/http/httpful.phar/Httpful/Handlers/JsonHandler.php:30
+Stack trace:
+#0 phar://C:/xamppp/htdocs/afreechat/includes/http/httpful.phar/Httpful/Response.php(107): Httpful\Handlers\JsonHandler->parse(' tenail{"data":...')
+#1 phar://C:/xamppp/htdocs/afreechat/includes/http/httpful.phar/Httpful/Response.php(46): Httpful\Response->_parse(' tenail{"data":...')
+#2 phar://C:/xamppp/htdocs/afreechat/includes/http/httpful.phar/Httpful/Request.php(230): Httpful\Response->__construct(' tenail{"data":...', 'HTTP/1.1 200 OK...', Object(Httpful\Request), Array)
+#3 phar://C:/xamppp/htdocs/afreechat/includes/http/httpful.phar/Httpful/Request.php(234): Httpful\Request->send()
+#4 C:\xamppp\htdocs\afreechat\includes\http\maq.php(29): Httpful\Request->sendIt()
+#5 C:\xamppp\htdocs\afreechat\includes\scramble_incl.php(60): Maq->post(Array)
+#6 C:\xamppp\htdocs\afreechat\includes\scramble_incl.php(11): getCurrentScramble('../')
+#7 C:\xamppp\htdocs\afreechat\scramble\index.php(9): getScrambleBasic()
+#8 {main}
+  thrown in phar://C:/xamppp/htdocs/afreechat/includes/http/httpful.phar/Httpful/Handlers/JsonHandler.php on line 30
+[02-Aug-2018 02:09:01 Europe/Berlin] PHP Notice:  Array to string conversion in C:\xamppp\htdocs\afreechat\includes\translate\translate.php on line 77
+[02-Aug-2018 02:10:13 Europe/Berlin] PHP Notice:  Array to string conversion in C:\xamppp\htdocs\afreechat\includes\translate\translate.php on line 78
+[02-Aug-2018 02:13:30 Europe/Berlin] PHP Notice:  Array to string conversion in C:\xamppp\htdocs\afreechat\includes\translate\translate.php on line 77
+[02-Aug-2018 02:14:01 Europe/Berlin] PHP Notice:  Array to string conversion in C:\xamppp\htdocs\afreechat\includes\translate\translate.php on line 77
+[02-Aug-2018 02:14:47 Europe/Berlin] PHP Notice:  Array to string conversion in C:\xamppp\htdocs\afreechat\includes\translate\translate.php on line 78
+[02-Aug-2018 02:15:14 Europe/Berlin] PHP Notice:  Array to string conversion in C:\xamppp\htdocs\afreechat\includes\translate\translate.php on line 79
+[02-Aug-2018 02:16:02 Europe/Berlin] PHP Notice:  Array to string conversion in C:\xamppp\htdocs\afreechat\includes\translate\translate.php on line 79
+[02-Aug-2018 02:48:05 Europe/Berlin] PHP Notice:  Undefined index: score in C:\xamppp\htdocs\afreechat\includes\scramble_incl.php on line 8
+[02-Aug-2018 02:48:05 Europe/Berlin] PHP Notice:  Undefined index: word in C:\xamppp\htdocs\afreechat\includes\scramble_incl.php on line 9
+[02-Aug-2018 02:48:37 Europe/Berlin] PHP Notice:  Undefined index: score in C:\xamppp\htdocs\afreechat\includes\scramble_incl.php on line 8
+[02-Aug-2018 02:48:37 Europe/Berlin] PHP Notice:  Undefined index: word in C:\xamppp\htdocs\afreechat\includes\scramble_incl.php on line 9
+[02-Aug-2018 02:51:21 Europe/Berlin] PHP Notice:  Undefined index: score in C:\xamppp\htdocs\afreechat\includes\scramble_incl.php on line 8
+[02-Aug-2018 02:51:21 Europe/Berlin] PHP Notice:  Undefined index: word in C:\xamppp\htdocs\afreechat\includes\scramble_incl.php on line 9
+[02-Aug-2018 02:56:14 Europe/Berlin] PHP Notice:  Undefined index: score in C:\xamppp\htdocs\afreechat\includes\scramble_incl.php on line 8
+[02-Aug-2018 02:56:14 Europe/Berlin] PHP Notice:  Undefined index: word in C:\xamppp\htdocs\afreechat\includes\scramble_incl.php on line 9
+[02-Aug-2018 03:00:48 Europe/Berlin] PHP Fatal error:  Uncaught Exception: Unable to parse response as JSON in phar://C:/xamppp/htdocs/afreechat/includes/http/httpful.phar/Httpful/Handlers/JsonHandler.php:30
+Stack trace:
+#0 phar://C:/xamppp/htdocs/afreechat/includes/http/httpful.phar/Httpful/Response.php(107): Httpful\Handlers\JsonHandler->parse(' <br />\n<b>Noti...')
+#1 phar://C:/xamppp/htdocs/afreechat/includes/http/httpful.phar/Httpful/Response.php(46): Httpful\Response->_parse(' <br />\n<b>Noti...')
+#2 phar://C:/xamppp/htdocs/afreechat/includes/http/httpful.phar/Httpful/Request.php(230): Httpful\Response->__construct(' <br />\n<b>Noti...', 'HTTP/1.1 200 OK...', Object(Httpful\Request), Array)
+#3 phar://C:/xamppp/htdocs/afreechat/includes/http/httpful.phar/Httpful/Request.php(234): Httpful\Request->send()
+#4 C:\xamppp\htdocs\afreechat\includes\http\maq.php(29): Httpful\Request->sendIt()
+#5 C:\xamppp\htdocs\afreechat\includes\scramble_incl.php(63): Maq->post(Array)
+#6 C:\xamppp\htdocs\afreechat\includes\scramble_incl.php(6): getCurrentScramble('../')
+#7 C:\xamppp\htdocs\afreechat\scramble\index.php(9): getScrambleBasic()
+#8 {main}
+  thrown in phar://C:/xamppp/htdocs/afreechat/includes/http/httpful.phar/Httpful/Handlers/JsonHandler.php on line 30
+[02-Aug-2018 03:01:04 Europe/Berlin] PHP Fatal error:  Uncaught Error: Cannot use object of type stdClass as array in C:\xamppp\htdocs\afreechat\includes\scramble_incl.php:68
+Stack trace:
+#0 C:\xamppp\htdocs\afreechat\includes\scramble_incl.php(6): getCurrentScramble('../')
+#1 C:\xamppp\htdocs\afreechat\scramble\index.php(9): getScrambleBasic()
+#2 {main}
+  thrown in C:\xamppp\htdocs\afreechat\includes\scramble_incl.php on line 68
+[02-Aug-2018 03:01:51 Europe/Berlin] PHP Fatal error:  Uncaught Error: Cannot use object of type stdClass as array in C:\xamppp\htdocs\afreechat\includes\scramble_incl.php:69
+Stack trace:
+#0 C:\xamppp\htdocs\afreechat\includes\scramble_incl.php(6): getCurrentScramble('../')
+#1 C:\xamppp\htdocs\afreechat\scramble\index.php(9): getScrambleBasic()
+#2 {main}
+  thrown in C:\xamppp\htdocs\afreechat\includes\scramble_incl.php on line 69
+[02-Aug-2018 04:00:50 Europe/Berlin] PHP Fatal error:  Uncaught Exception: Unable to parse response as JSON in phar://C:/xamppp/htdocs/afreechat/includes/http/httpful.phar/Httpful/Handlers/JsonHandler.php:30
+Stack trace:
+#0 phar://C:/xamppp/htdocs/afreechat/includes/http/httpful.phar/Httpful/Response.php(107): Httpful\Handlers\JsonHandler->parse(' <br />\n<b>Noti...')
+#1 phar://C:/xamppp/htdocs/afreechat/includes/http/httpful.phar/Httpful/Response.php(46): Httpful\Response->_parse(' <br />\n<b>Noti...')
+#2 phar://C:/xamppp/htdocs/afreechat/includes/http/httpful.phar/Httpful/Request.php(230): Httpful\Response->__construct(' <br />\n<b>Noti...', 'HTTP/1.1 200 OK...', Object(Httpful\Request), Array)
+#3 phar://C:/xamppp/htdocs/afreechat/includes/http/httpful.phar/Httpful/Request.php(234): Httpful\Request->send()
+#4 C:\xamppp\htdocs\afreechat\includes\http\maq.php(29): Httpful\Request->sendIt()
+#5 C:\xamppp\htdocs\afreechat\includes\scramble_incl.php(33): Maq->post(Array)
+#6 C:\xamppp\htdocs\afreechat\scramble\leaderboard.php(8): getAllTopWinnersScramble()
+#7 {main}
+  thrown in phar://C:/xamppp/htdocs/afreechat/includes/http/httpful.phar/Httpful/Handlers/JsonHandler.php on line 30
+[02-Aug-2018 04:01:51 Europe/Berlin] PHP Fatal error:  Uncaught Exception: Unable to parse response as JSON in phar://C:/xamppp/htdocs/afreechat/includes/http/httpful.phar/Httpful/Handlers/JsonHandler.php:30
+Stack trace:
+#0 phar://C:/xamppp/htdocs/afreechat/includes/http/httpful.phar/Httpful/Response.php(107): Httpful\Handlers\JsonHandler->parse(' <br />\n<b>Noti...')
+#1 phar://C:/xamppp/htdocs/afreechat/includes/http/httpful.phar/Httpful/Response.php(46): Httpful\Response->_parse(' <br />\n<b>Noti...')
+#2 phar://C:/xamppp/htdocs/afreechat/includes/http/httpful.phar/Httpful/Request.php(230): Httpful\Response->__construct(' <br />\n<b>Noti...', 'HTTP/1.1 200 OK...', Object(Httpful\Request), Array)
+#3 phar://C:/xamppp/htdocs/afreechat/includes/http/httpful.phar/Httpful/Request.php(234): Httpful\Request->send()
+#4 C:\xamppp\htdocs\afreechat\includes\http\maq.php(29): Httpful\Request->sendIt()
+#5 C:\xamppp\htdocs\afreechat\includes\scramble_incl.php(33): Maq->post(Array)
+#6 C:\xamppp\htdocs\afreechat\scramble\leaderboard.php(8): getAllTopWinnersScramble()
+#7 {main}
+  thrown in phar://C:/xamppp/htdocs/afreechat/includes/http/httpful.phar/Httpful/Handlers/JsonHandler.php on line 30
