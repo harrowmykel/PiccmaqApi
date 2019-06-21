@@ -279,7 +279,7 @@
 
 		/*CUSTOM CODE*/
 		// $qq = "SELECT * FROM pmessages_users WHERE (recip='$user' OR auth = '$user')  ORDER BY end_time DESC ".calcpages($num, NO_OF_MSGS));
-		$qq .= calcpages(DEFAULT_NUM_VAR, NO_OF_MSGS);
+		$qq .= calcpages(2000, NO_OF_MSGS);
 		$result=queryMysql($qq);
 
 		$num= $result->num_rows;
@@ -313,10 +313,8 @@
 	}
 
 	function msgContent($query){//only for fetch smessages
-		/*$result=queryMysql($query);
-		$num=$result->num_rows;*/
-		
-		$num=DEFAULT_NUM_VAR;
+		$result=queryMysql($query);
+		$num=$result->num_rows;
 		$array_=$array=array();
 
 		$curr_pages=getCurrentPage();

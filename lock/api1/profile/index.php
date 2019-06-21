@@ -332,8 +332,7 @@
 		$VARR=VARR;
 
 		$q="SELECT user FROM members WHERE (NOT members.user IN (SELECT welcome_list.recip FROM welcome_list WHERE welcome_list.recip=members.user AND welcome_list.auth='$user')) ORDER BY members.join_date DESC";
-		// $num=checknum($q);
-		$num=DEFAULT_NUM_VAR;
+		$num=checknum($q);
 		$result = queryMysql($q .calcpages($num, NO_OF_SEARCHES));
 		$num  = $result->num_rows;
 		if($num<1){
@@ -416,8 +415,7 @@
 		$useri=$user=getThisUser();
 		$array_=$array=array();
 		   
-		// $num  =checknum($q);
-		$num=DEFAULT_NUM_VAR;
+		$num  =checknum($q);
 
 		$curr_pages=getCurrentPage();
 		$pages=intval($num/NO_OF_SEARCHES);

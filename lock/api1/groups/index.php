@@ -108,10 +108,9 @@
 	function groupContent($q){
 		$useri=$user=getThisUser();
 		$array_=$array=array();
-/*
+
 		$result = queryMysql($q);
-		$num  = $result->num_rows;*/
-		$num = DEFAULT_NUM_VAR;
+		$num  = $result->num_rows;
 			
 		if($num<1){
 			return apiLeave(emptyArray());

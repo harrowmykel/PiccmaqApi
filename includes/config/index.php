@@ -55,14 +55,14 @@
 			"dbpass"  => 'A@ehjda2333hednde');
 	$localhost_array=array(
 			"dbhost"  => 'localhost',
-			"dbname"  => 'piccmaqc',
+			"dbname"  => 'piccmaqreal',
 			"dbuser"  => 'phorum5',
 			"dbpass"  => 'phorum5');
 	
 	if(AF_IN_DEBUG){
 
 	/*Edit lock/apiii/incl/index.php too..if you change root_dir*/
-		define('DEF_URL', 'http://localhost/api');
+		define('DEF_URL', 'http://localhost/GitProjects/PiccmaqApi22');
 		define('DB_ARRAY', $localhost_array);	
 		define('BASESES', $rel____);
 		// define('ROOT_DIR', "/home/piccmaqc/public_html/");

@@ -28,7 +28,7 @@
 	    if(NO_QUERY){
 	        return "";
 	    }
-		// fwrite(fopen("jddj", "a+"), $query);
+        // fwrite(fopen("filename3.txt", "a+"), $query);
 		$result = $connection->query($query);
 		if (!$result) die($connection->error);
 		return $result;

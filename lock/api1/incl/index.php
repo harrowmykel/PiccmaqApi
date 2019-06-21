@@ -13,8 +13,6 @@
 		$rel____=$root."../../";
 	}
 	define('IS_API', true);	
-	define('DEFAULT_NUM_VAR', 2000);
-	
 	$rel="/lock/apiii/incl/config";
 
 	

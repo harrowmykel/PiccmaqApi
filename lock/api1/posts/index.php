@@ -5,22 +5,6 @@
 	include $root. "incl/index.php";
 	$req=getReq();
 	
-	release(array("id"=>'$row["user_id"]',
-									"auth_username"=>'$row["user"]',
-									"verified"=>'$veri',
-						            "confirm"=>' message_read', 
-									"online"=>'$online',
-									"last_read"=>'$verio',
-									"last_rcvd"=>'$verio1',
-									"auth_data"=>array(
-									 			"auth"=>'$fullname',
-									 			"fullname"=>'$fullname',
-									 			"auth_img"=>'$image'
-									 			)
-								));
-	
-	exit();
-	
     $NoLogIn=array();
     runApiReqCheck($NoLogIn);
 	switch($req){
@@ -109,7 +93,7 @@
 		}
 		if(!empty($fav)){
 			//only searches friends post OR public
-			$q="SELECT * FROM messages WHERE ((messages.auth IN (SELECT friends.recip FROM friends WHERE friends.user='$user' AND confirm=2)) OR (messages.auth IN (SELECT friends.recip FROM friends WHERE friends.user='$user' AND confirm=2)) OR privacy_=".privacy_public.")  AND message LIKE '%$fav%' ORDER BY messages.time DESC ";
+			$q="SELECT * FROM messages WHERE ((messages.auth IN (SELECT friends.recip FROM friends WHERE friends.user='$user' AND confirm=2)) OR (messages.auth IN (SELECT friends.recip FROM friends WHERE friends.user='$user' AND confirm=2)) OR privacy_=".privacy_public.")  AND  AND is_group=0 message LIKE '%$fav%' ORDER BY messages.time DESC ";
 			//searches all public posts
 			// $q="SELECT * FROM messages WHERE privacy_=".privacy_public."  ORDER BY messages.time DESC ";
 		}
@@ -126,7 +110,7 @@
 		$q=$q." ORDER BY messages.time DESC";
 		if(!empty($fav)){
 			//only searches public
-			$q="SELECT * FROM messages WHERE privacy_=".privacy_public."  AND message LIKE '%$fav%' ORDER BY messages.time DESC ";
+			$q="SELECT * FROM messages WHERE privacy_=".privacy_public."  AND is_group=0 AND message LIKE '%$fav%' ORDER BY messages.time DESC ";
 		}
 		return getPosts($q);
 	}
@@ -136,7 +120,7 @@
 		$fav=getGetorPostString("q");
 		$who=getGetorPostString('postid');
 		$q="SELECT * FROM messages WHERE messages.id ='$who'";
-		return getPosts($q);
+		return getPosts($q, true);
 	}
 
 	function getPostsBy(){
@@ -237,8 +221,7 @@
 			$end= " AND user LIKE '%$q_search%'";
 		}
 		$q="SELECT * FROM likes WHERE msg_id=$post_id ". $end;
-		// $nul=checknum($q);
-		$nul=DEFAULT_NUM_VAR;
+		$nul=checknum($q);
 		$qu=$q." ORDER BY id DESC ".calcPages($nul, COMMENTS_NO);
 		$result=queryMysql($qu);
 		$num=$result->num_rows;
@@ -270,12 +253,8 @@
 												"r_sent"=>$r_sent,
 												"r_rcvd"=>$r_rcvd,
 												"r_frnds"=>$r_frnds),
-									"auth_data"=>array(
-									 			"auth"=>getFullname($row['user']),
-									 			"fullname"=>getFullname($row['user']),
-									 			"auth_img"=>getUserDp($row['user'])
-									 			)
-								));
+									 "auth_data"=>fetchAuthData($row["user"])
+									 			));
 		}
 
 
@@ -294,6 +273,7 @@
 		$privacy=getGetorPostString('privacy');
 		if($toUser){
     		$view=(!empty(getGetorPostString('who')))?getGetorPostString('who'):$user;
+		    $privacy=privacy_public;
 		}else{
 		    $view=$user;
 		}
@@ -320,8 +300,9 @@
     	queryMysql($e);
         $id=getLastId();
    		checkMentions($id, $user, $view, $text, true);
-		
-		return apiLeave(success(345));
+		$rty=success(345);
+		$rty[0]["id"]=$id;
+		return apiLeave($rty);
 	}
 	
 	function editPost(){
@@ -429,9 +410,9 @@
 
 function getPosts($q, $noPagination=false){
 	$array=array();
-	$user=getThisUser();
-
-	$num = $nul = DEFAULT_NUM_VAR;	
+	$user=getThisUser();	
+	$result= querymysql($q);
+	$num=$nul=$result->num_rows;
 
 	if(!$noPagination){
 		$curr_pages=getCurrentPage();
@@ -441,8 +422,6 @@ function getPosts($q, $noPagination=false){
 		$result = queryMysql($q.calcpages($nul, NO_OF_HOME_RESULTS));
 		$num  = $result->num_rows;		
 	}else{
-		$result= querymysql($q);
-		$num=$nul=$result->num_rows;
 		$num=$nul;
 		$curr_pages=0;
 		$pages=0;
@@ -503,14 +482,8 @@ function getPosts($q, $noPagination=false){
     							 "likes"=>$likes,
     							 "liked"=>$liked,
     							 "web_link"=>$wb_link,
-								 "reciv_data"=>array(
-								 			"reciv_img"=>getUserDp($row["recip"]),
-								 			"reciv"=> getFullname($row['recip'])
-								 			),
-								 "auth_data"=>array(	
-								 			"auth_img"=> getUserDp($row["auth"]), 
-								 			"auth"=> $whok
-								 			),
+								 "auth_data"=>fetchAuthData($row["auth"]),
+								 "reciv_data"=>fetchRecivData($row["recip"]),
     							 "comments"=>$comments));
 	}
 

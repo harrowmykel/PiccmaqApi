@@ -237,8 +237,7 @@
 			$end= " AND user LIKE '%$q_search%'";
 		}
 		$q="SELECT * FROM likes WHERE msg_id=$post_id ". $end;
-		// $nul=checknum($q);
-		$nul=DEFAULT_NUM_VAR;
+		$nul=checknum($q);
 		$qu=$q." ORDER BY id DESC ".calcPages($nul, COMMENTS_NO);
 		$result=queryMysql($qu);
 		$num=$result->num_rows;
@@ -429,9 +428,9 @@
 
 function getPosts($q, $noPagination=false){
 	$array=array();
-	$user=getThisUser();
-
-	$num = $nul = DEFAULT_NUM_VAR;	
+	$user=getThisUser();	
+	$result= querymysql($q);
+	$num=$nul=$result->num_rows;
 
 	if(!$noPagination){
 		$curr_pages=getCurrentPage();
@@ -441,8 +440,6 @@ function getPosts($q, $noPagination=false){
 		$result = queryMysql($q.calcpages($nul, NO_OF_HOME_RESULTS));
 		$num  = $result->num_rows;		
 	}else{
-		$result= querymysql($q);
-		$num=$nul=$result->num_rows;
 		$num=$nul;
 		$curr_pages=0;
 		$pages=0;

@@ -43,10 +43,8 @@
 	}
 
 	function msgContent($query){
-		/*$result=queryMysql($query);
-		$num=$result->num_rows;*/
-
-		$num=DEFAULT_NUM_VAR;
+		$result=queryMysql($query);
+		$num=$result->num_rows;
 		$array_=$array=array();
 		$user=getThisUser();
 

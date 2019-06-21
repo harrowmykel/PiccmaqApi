@@ -86,9 +86,8 @@
 	}
 
 	function msgContent($query){//only for fetch smessages
-		/*$result=queryMysql($query);
-		$num=$result->num_rows;*/
-		$num=DEFAULT_NUM_VAR;
+		$result=queryMysql($query);
+		$num=$result->num_rows;
 		$array_=$array=array();
 
 		$curr_pages=getCurrentPage();
@@ -143,8 +142,7 @@
 
 		$q="SELECT * FROM games_tbl ";
 
-		// $num=checknum($q);
-		$num=DEFAULT_NUM_VAR;
+		$num=checknum($q);
 		$q=$q." ORDER BY scramble DESC ". calcpages($num, $VARR);
 
 		$resultf=queryMysql($q);
